@@ -35,8 +35,12 @@ def generate_spiral(n):
         curr = go_up(spiral, curr)
         curr = go_left(spiral, curr)
         curr = go_down(spiral, curr)
+    return spiral
+
+def print_spiral(spiral):
     for row in spiral:
         print(row)
 
 if __name__ == '__main__':
-    generate_spiral(20)
+    spiral = generate_spiral(20)
+    print_spiral(spiral)
